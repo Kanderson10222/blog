@@ -1,0 +1,15 @@
+<h1>Post Blogs</h1>
+
+<section id="blog-content">
+  <div class="container">
+    <div id="posts-blogroll" class="blogroll">
+      <%= link_to "Create A Post", new_post_path %>
+      <% @posts.each do |post| %>
+        <h3><a class="post-link" href="/post/<%= post.id %>"><%= post.title %></a></h3>
+        <p class="post-content"><%= post.content %></p>
+
+      <%= link_to "edit", edit_post_path(post) %>
+      <% end %>
+    </div>
+  </div>
+</section>
