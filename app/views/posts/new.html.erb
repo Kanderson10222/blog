@@ -1,3 +1,5 @@
+<div class="section">
+
 <%= form_for @post do |f| %>
     <div>
         <%= f.label :title %>
@@ -5,9 +7,10 @@
     </div>
     <div>
         <%= f.label :content %>
-        <%= f.text_field :content %>
+        <%= f.text_area :content %>
     </div>
     <div>
         <%= f.submit  %>
     </div>
+</div>
 <% end %>
