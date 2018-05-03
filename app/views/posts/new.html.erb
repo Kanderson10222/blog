@@ -1,3 +1,5 @@
+<h1>Create a new post</h1>
+
 <div class="section">
 
 <%= form_for @post do |f| %>
@@ -12,5 +14,6 @@
     <div>
         <%= f.submit  %>
     </div>
+    <%= link_to "Cancel", root_path %>
 </div>
 <% end %>
