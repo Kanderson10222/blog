@@ -1,0 +1,17 @@
+<div class="section">
+
+<%= form_for @post do |f| %>
+    <div>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+    </div>
+    <div>
+        <%= f.label :content %>
+        <%= f.text_area :content %>
+    </div>
+    <div>
+        <%= f.submit  %>
+    </div>
+    <%= link_to "Cancel", root_path %>
+<% end %>
+</div>
