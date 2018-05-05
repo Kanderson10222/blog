@@ -1,5 +1,5 @@
 <div class="">
-  <article class="media">
+  <p class="media">
     <div class="">
       <p>
       <strong><%= comment.name %>: </strong>
@@ -8,5 +8,6 @@
       </p>
     </div>
     <%= link_to 'Delete', [comment.post, comment], method: :delete, data: {confirm: "Are you sure?" } %>
-  </article>
+    <hr />
+  </p>
 </div>
