@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <header>
+      <% if flash[:notice] %>
+      <div class="">
+      <p class="notice"><%= notice %></p>
+    </div>
+    <% end %>
+      <% if flash[:alert] %>
+       <p class="alert"><%= alert %></p>
+    <% end %>
+      <header>
     <nav class="navbar">
       <div class="">
       <%= link_to 'Home', root_path, class: "navbar-item" %>
