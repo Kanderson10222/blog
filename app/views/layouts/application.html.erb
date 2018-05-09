@@ -28,7 +28,7 @@
       <div class="signOut">
         <%= link_to 'sign-out', destroy_user_session_path, method: :delete %>
       </div>
-      <ul>
+      <!-- <ul>
               <li><a href="/">Home</a></li>
               <% if current_user %>
                 <% # Logged In %>
@@ -41,7 +41,7 @@
                 <li class="logged-out"><a href="users/sign_in">Login</a></li>
                 <li class="logged-out"><a href="/">The Room</a></li>
               <% end%>
-            </ul>
+            </ul> -->
     </nav>
     <%= yield %>
   </body>
