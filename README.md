@@ -1,24 +1,21 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Rails Blog
+This is a blog built on Rails as a project for NYCDA's Web Dev Intensive.
 
-Things you may want to cover:
+Rails 5.2.0
+jQuery Rails
 
-* Ruby version
+Requires
+Ruby, Bundler
 
-* System dependencies
+# How to Use
 
-* Configuration
+Clone this repo.
 
-* Database creation
+bundle install
 
-* Database initialization
+rake db:migrate
 
-* How to run the test suite
+rake db:seed
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run the server.
