@@ -13,7 +13,7 @@ def destroy
   @comment = @post.comments.find(params[:id])
   if @comment.user_id == current_user.id
   @comment.destroy
-  end
+end
   redirect_to post_path(@post)
 
 end
