@@ -1,9 +1,11 @@
-
+<%= link_to root_path, class: "K-ZOne" do %>
 <h1>Kob's Z0ne</h1>
-
+<% end %>
 <section id="blog-content">
   <div class="container">
+
     <div id="posts-blogroll" class="blogroll">
+
       <%= link_to "Create A Post", new_post_path %>
       <% @posts.each do |post| %>
       <h2><%= post.user.email %></h2>
